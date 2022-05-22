@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.Medium
 {
     internal static class MinimumRemoveParantheses
-    { 
+    {
         internal static string Solution(string s)
         {
 
@@ -33,12 +33,12 @@ namespace LeetCode
                     if (sb[j] == '(')
                     {
                         balance -= 1;
-                        if (balance >= 0) continue; 
+                        if (balance >= 0) continue;
                     }
                     sbResult.Append(sb[j]);
                 }
 
-                var resultado = (sbResult.ToString().Reverse()).ToArray();
+                var resultado = sbResult.ToString().Reverse().ToArray();
                 return new string(resultado);
             }
             else

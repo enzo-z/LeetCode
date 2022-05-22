@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.Medium
 {
     public class TwoSum
     {
-        // Cut a loop, bish!
+        // Not the greatest. REVIEW!
         public int[] TwoSumSolution(int[] nums, int target)
         {
             var possibleNumbers = nums.Where(number => number <= target)
@@ -20,7 +20,7 @@ namespace LeetCode
             {
                 if (possibleNumbers[i] > target)
                     continue;
-                for (int j = i+1; i < possibleNumbers.Length; j++)
+                for (int j = i + 1; i < possibleNumbers.Length; j++)
                 {
                     if (possibleNumbers[i] + possibleNumbers[j] == target)
                     {
