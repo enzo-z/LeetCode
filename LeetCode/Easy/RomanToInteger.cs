@@ -8,7 +8,6 @@ namespace LeetCode.Easy
 {
     internal class RomanToInteger
     {
-      
         /// <summary>
         /// Runtime: 70ms
         /// </summary>
