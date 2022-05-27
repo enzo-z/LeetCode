@@ -5,5 +5,5 @@ using LeetCode.Easy;
 //Console.WriteLine( RomanToInteger.OtherSolution("MCMXCIV")) ;
 //Console.ReadLine();
 
-var r = PlusOne.MySolution(new int[] { 8, 9});
-Console.WriteLine(r);
+var listNode = new ListNode(1, new(1, new(1, new(2, null))));
+RemoveDuplicatesFromSortedList.mySolution(listNode);
