@@ -59,7 +59,7 @@ namespace Collections.MainCollections
             var outraPessoa = obj as PessoaSet;
             if (obj is null)
                 return false;
-            return outraPessoa.Id == Id;
+            return outraPessoa!.Id == Id;
         }
 
         public override string? ToString()

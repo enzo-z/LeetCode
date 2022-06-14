@@ -51,7 +51,7 @@ namespace Collections.MainCollections
             if (_history.Any())
             {
                 Console.WriteLine("Voltou!");
-                _forward.Push(_currentAddr);
+                _forward.Push(_currentAddr!);
                 _currentAddr = _history.Pop();
             }
             ShowCurrentPage();

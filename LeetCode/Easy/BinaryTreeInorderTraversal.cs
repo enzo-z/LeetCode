@@ -31,7 +31,7 @@ namespace LeetCode.Easy
             
         }
 
-        public void TraverseTree(TreeNode node)
+        public void TraverseTree(TreeNode? node)
         {
             while(node is not null)
             {
@@ -43,10 +43,10 @@ namespace LeetCode.Easy
 
     public class TreeNode {
         public int val;
-        public TreeNode left;
-        public TreeNode right;
+        public TreeNode? left;
+        public TreeNode? right;
 
-        public TreeNode(int val=0, TreeNode left=null, TreeNode right = null)
+        public TreeNode(int val=0, TreeNode? left = null, TreeNode? right = null)
         {
             this.val = val;
             this.left = left;
